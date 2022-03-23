@@ -1,0 +1,130 @@
+.about {
+  padding: 80px;
+  background: #fff;
+  @include mq(500) {
+    padding: 40px;
+  }
+  // .about__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @include mq(976) {
+      flex-direction: column;
+    }
+  }
+
+  // .about__text-block
+  &__text-block {
+    margin-right: 80px;
+    flex: 0 1 365px;
+    @include mq(976) {
+      max-width: 560px;
+      flex: none;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+  }
+
+  // .about__title
+  &__title {
+    white-space: nowrap;
+    @include adptMrg(bottom, 28, 12, 1280);
+    @include mq(500) {
+      white-space: normal;
+      margin-bottom: 28px;
+    }
+  }
+
+  // .about__text
+  &__text {
+    @include adptMrg(bottom, 40, 18, 1280);
+  }
+
+  // .about__button
+  &__button {
+    @include mq(500) {
+      padding: 15px;
+    }
+  }
+
+  // .about__info-block
+  &__info-block {
+    flex: 0 1 560px;
+  }
+}
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px;
+  background: #f3f7f4;
+  border-radius: 6px;
+
+  @include mq(976) {
+    max-width: 560px;
+    flex: none;
+    align-self: flex-end;
+  }
+  @include mq(500) {
+    padding: 30px;
+    margin: -10px;
+  }
+  // .info-block__icon
+  &__icon {
+    margin-bottom: 10px;
+  }
+
+  // .info-block__title
+  &__title {
+    @include adptMrg(bottom, 40, 18, 1280);
+
+    color: #283337;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  // .info-block__text
+  &__text {
+    @include adptMrg(bottom, 38, 18, 1280);
+  }
+
+  // .info-block__link
+  &__link {
+    position: relative;
+    align-self: flex-end;
+
+    color: #283337;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    &:visited {
+      color: #283337;
+    }
+    &::after {
+      content: "";
+      width: 0;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      height: 3px;
+      transition: width 0.3s, left 0.3s;
+      background: #40494d;
+    }
+    &:hover,
+    &:focus {
+      &::after {
+        left: 0;
+        width: 100%;
+      }
+    }
+    &:focus {
+      outline: none;
+      transform: translateY(-4px);
+    }
+  }
+}

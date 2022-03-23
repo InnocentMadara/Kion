@@ -1,0 +1,40 @@
+.companies {
+  background: #fff;
+
+  // .companies__container
+  &__container {
+    padding: 5.555vw 80px 10.416vw;
+    @media (min-width: 1441px) {
+      padding-top: 80px;
+      padding-bottom: 150px;
+    }
+  }
+
+  // .companies__title
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+    @include mq(700) {
+      margin-bottom: 45px;
+    }
+  }
+
+  // .companies__brands-block
+  &__brands-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(700) {
+      flex-direction: column;
+    }
+  }
+
+  // .companies__brand
+  &__brand {
+    & + & {
+      @include mq(700) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

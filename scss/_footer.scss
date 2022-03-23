@@ -1,0 +1,212 @@
+.footer {
+  background: #101c21;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  h4,
+  p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+  }
+  // .footer__container
+  &__container {
+    max-width: 1320px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-areas:
+      "product      resources support   about       icon"
+      "integrations subscribe subscribe subscribe   icon"
+      "demo         demo      demo      demo        icon"
+      "socials      license   license   copyrights  icon";
+    grid-template-columns: 5fr 2fr 2fr 2fr auto;
+    grid-template-rows: 3fr 2fr minmax(80px, calc(min(130px, 9.027vw))) auto;
+    row-gap: 30px;
+    @include mq(976) {
+      grid-template-areas:
+        "product   integrations integrations  icon"
+        "resources support      about         icon"
+        "subscribe subscribe    subscribe     icon"
+        "demo      demo         demo          icon"
+        "socials   license      copyrights    icon";
+
+      grid-template-columns: 1fr 1fr 1fr auto;
+      grid-template-rows: 3fr 2fr 3fr 2fr auto;
+    }
+    @include mq(600) {
+      grid-template-areas:
+        "product    integrations integrations"
+        "resources  support      about"
+        "subscribe  subscribe    subscribe"
+        "demo       demo         icon"
+        "socials    socials      socials"
+        "license    license      license"
+        "copyrights copyrights   copyrights";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 3fr 2fr 3fr 2fr auto auto auto;
+    }
+  }
+
+  // .footer__title
+  &__title {
+    color: #878d90;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  // .footer__list
+  &__list {
+  }
+
+  // .footer__item
+  &__item {
+    font-size: 14px;
+
+    & + & {
+      margin-top: 14px;
+    }
+    // .footer__item-product
+    &-product {
+      color: #cfd2d3;
+      font-size: 16px;
+    }
+  }
+
+  // .footer__product
+  &__product {
+    grid-area: product;
+  }
+
+  // .footer__resources
+  &__resources {
+    grid-area: resources;
+  }
+
+  // .footer__support
+  &__support {
+    grid-area: support;
+  }
+
+  // .footer__about
+  &__about {
+    grid-area: about;
+  }
+
+  // .footer__icon
+  &__icon {
+    grid-area: icon;
+    justify-self: end;
+  }
+
+  // .footer__integrations
+  &__integrations {
+    grid-area: integrations;
+    @include mq(768) {
+      margin-left: 10px;
+    }
+  }
+
+  // .footer__subscribe
+  &__subscribe {
+    grid-area: subscribe;
+    display: flex;
+    flex-direction: column;
+    &-text {
+      margin-bottom: 32px;
+      font-size: 19px;
+    }
+    &-form {
+      display: flex;
+      @include mq(600) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+    &-input {
+      flex: 1 0 auto;
+      margin-right: 20px;
+      padding: 17px 40px;
+      font-size: 18px;
+      line-height: 21px;
+      color: #283337;
+      background: #fff;
+      border: 1px solid #cfd2d3;
+      border-radius: 4px;
+      @include mq(600) {
+        margin-right: 0;
+        width: 90%;
+      }
+      &::placeholder {
+        font-size: 15px;
+        color: #878d90;
+        opacity: 1;
+      }
+      &:focus {
+        outline: none;
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+    &-button {
+      @include mq(600) {
+        align-self: flex-end;
+        margin-right: 5%;
+      }
+    }
+  }
+
+  // .footer__demo
+  &__demo {
+    grid-area: demo;
+  }
+
+  // .footer__socials
+  &__socials {
+    grid-area: socials;
+    display: flex;
+    align-items: center;
+  }
+
+  // .footer__social
+  &__social {
+    & + & {
+      margin-left: 35px;
+    }
+  }
+
+  // .footer__license
+  &__license {
+    grid-area: license;
+  }
+
+  // .footer__license-text
+  &__license-text {
+    display: inline-block;
+    font-size: 13px;
+    color: #9fa4a6;
+    & + & {
+      margin-left: 20px;
+    }
+  }
+
+  // .footer__copyrights
+  &__copyrights {
+    grid-area: copyrights;
+  }
+
+  // .footer__copyrights-text
+  &__copyrights-text {
+    font-size: 13px;
+    color: #9fa4a6;
+  }
+  &__socials,
+  &__license,
+  &__copyrights {
+    @include mq(600) {
+      justify-self: end;
+      text-align: right;
+    }
+  }
+}

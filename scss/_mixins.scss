@@ -1,0 +1,13 @@
+//Adaptive Margin
+@mixin adptMrg($direction: bottom, $max: 100, $min: 40, $containerWidth: 1280) {
+  margin-#{$direction}: calc(
+    max(min(#{$max/$containerWidth * 100}vw, #{$max}px), #{$min}px)
+  );
+}
+
+// Media query
+@mixin mq($width) {
+  @media (max-width:#{$width}px) {
+    @content;
+  }
+}

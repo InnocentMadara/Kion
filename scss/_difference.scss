@@ -1,0 +1,121 @@
+.difference {
+  background: #fff;
+
+  // .difference__container
+  &__container {
+    padding: 9.722vw 25px 5.555vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 1441px) {
+      padding-top: 140px;
+      padding-bottom: 80px;
+    }
+    @include mq(900) {
+      flex-direction: column;
+    }
+  }
+
+  // .difference__text-block
+  &__text-block {
+    max-width: 380px;
+    margin-right: 30px;
+    @include mq(900) {
+      margin-right: 0;
+      margin-bottom: 45px;
+    }
+  }
+
+  // .difference__title
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  // .difference__text
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  // .difference__list-title
+  &__list-title {
+    margin-bottom: 24px;
+
+    color: #283337;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 127%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  // .difference__list
+  &__list {
+    margin-bottom: 24px;
+
+    list-style: none;
+  }
+
+  // .difference__item
+  &__item {
+    margin-left: 35px;
+    & + & {
+      margin-top: 12px;
+    }
+  }
+
+  // .difference__link
+  &__link {
+    position: relative;
+
+    color: #283337;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    &:visited {
+      color: #283337;
+    }
+    &::after {
+      content: "";
+      width: 0;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      height: 3px;
+      transition: width 0.3s, left 0.3s;
+      background: #40494d;
+    }
+    &:hover,
+    &:focus {
+      &::after {
+        left: 0;
+        width: 100%;
+      }
+    }
+    &:focus {
+      outline: none;
+      transform: translateY(-4px);
+    }
+  }
+
+  // .difference__video-wrapper
+  &__video-wrapper {
+    background: #363636;
+    width: 640px;
+    aspect-ratio: 16/9;
+    max-width: 90%;
+    @include mq(700) {
+      margin: 0 25px;
+    }
+  }
+
+  // .difference__video
+  &__video {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}

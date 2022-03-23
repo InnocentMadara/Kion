@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kion</title>
+    <link rel="icon" type="icon.png" href="./images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.3927 0.0293255L17.413 0.0879765V39.912L18.3927 39.9707C18.7711 39.9903 19.1396 40 19.4985 40C19.8576 40 20.2359 39.9903 20.6044 39.9707L21.5843 39.912V0.0879765L20.6044 0.0293255C19.8576 -0.00977516 19.1494 -0.00977516 18.3927 0.0293255ZM28.2099 20.2151C28.1322 20.0195 28.1322 19.8044 28.2099 19.6089L33.4871 5.77707L32.9632 5.29808C32.391 4.77023 31.7798 4.26191 31.1493 3.80248L30.053 3.00092L24.3005 18.0937C23.8542 19.2571 23.8542 20.5473 24.2907 21.7107L30.0336 36.9989L31.1395 36.1975C31.77 35.738 32.3812 35.2297 32.9536 34.7019L33.4677 34.2228L28.2099 20.2151ZM6.5092 17.7908L1.50361 11.3685L0.863366 13.1378C0.552943 13.998 0.300724 14.8876 0.106708 15.7967L0 16.2756L2.81321 19.8729C2.91022 19.9903 2.91022 20.1661 2.81321 20.2835L0.0194015 23.8025L0.12611 24.2913C0.320125 25.1907 0.582045 26.0704 0.89247 26.9208L1.53271 28.6608L6.4995 22.3949C7.58598 21.0264 7.58598 19.1789 6.5092 17.7908ZM39.0069 16.2267L36.2033 19.7653C36.1064 19.8924 36.1064 20.0585 36.1937 20.1759L38.9972 23.7633L38.8904 24.2424C38.6965 25.1417 38.4346 26.0312 38.1241 26.8915L37.4839 28.6509L32.4976 22.258C31.4209 20.8699 31.4209 19.0127 32.517 17.6344L37.5033 11.3489L38.1435 13.0987C38.454 13.9491 38.7062 14.8387 38.9002 15.738L39.0069 16.2267ZM7.85762 3.80248L8.9635 3.00092L14.7257 18.348C15.1623 19.5112 15.1623 20.8015 14.7161 21.9648L8.98291 37.0088L7.88672 36.2072C7.25617 35.7477 6.64503 35.2395 6.07268 34.7116L5.54884 34.2325L10.8066 20.4496C10.8843 20.2541 10.8843 20.0391 10.8066 19.8436L5.52944 5.78684L6.04358 5.29808C6.61593 4.77023 7.22707 4.26191 7.85762 3.80248Z"
+              fill="#61D7AC"
+            />
+          </svg>
+          <svg
+            width="81"
+            height="34"
+            viewBox="0 0 81 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.23563 14.6639H4.88805V0.919922H0.6875V32.6111H4.88805V18.8672H7.23563H9.26306H10.4562C11.339 18.8672 12.1247 19.3657 12.5225 20.1575L18.5952 32.5231L18.6437 32.6111H23.2903L16.2476 18.2807C15.7723 17.3227 15.7723 16.2181 16.2476 15.2601L23.2806 0.929695H18.634L12.5225 13.3833C12.1345 14.1751 11.339 14.6736 10.4562 14.6736H9.26306H7.23563V14.6639ZM63.5001 32.5035V13.5983H69.3497C69.8638 13.5983 70.3683 13.7449 70.7951 14.0284C71.0473 14.1945 71.2801 14.3999 71.4548 14.6443C71.61 14.8592 71.6779 15.0841 71.7458 15.3383L71.8912 15.8368L72.3278 17.3324L72.3289 17.336V17.3361C72.5226 17.9996 72.7161 18.6631 72.9098 19.3363C73.0214 19.7224 73.1353 20.1109 73.2493 20.4995C73.3634 20.8881 73.4772 21.2767 73.5889 21.6628C73.8314 22.4839 74.074 23.3148 74.3067 24.1359C74.4231 24.5416 74.542 24.9497 74.6608 25.3579C74.7796 25.7659 74.8985 26.174 75.0149 26.5797C75.121 26.9495 75.2297 27.3216 75.3384 27.6937L75.3388 27.6952L75.3391 27.6961L75.3399 27.6991L75.34 27.6995L75.3403 27.7005C75.4493 28.0739 75.5583 28.4472 75.6648 28.8183C75.757 29.1261 75.8467 29.434 75.9364 29.742C76.0261 30.0499 76.116 30.3579 76.2081 30.6657L76.5864 31.956C76.6107 32.0489 76.6373 32.1393 76.664 32.2297C76.6908 32.3201 76.7174 32.4105 76.7417 32.5035V32.5132H81.0003L75.4417 13.4125L75.364 13.2561C74.2194 10.9296 71.9106 9.48291 69.3399 9.48291H59.3966V32.5132H63.5001V32.5035ZM27.9177 5.81732C26.5886 5.81732 25.5119 4.71274 25.5119 3.35398C25.5119 2.02455 26.5886 0.929735 27.9177 0.929735C29.2661 0.929735 30.3622 2.01478 30.3622 3.35398C30.3622 4.71274 29.2661 5.81732 27.9177 5.81732ZM30.0323 9.36573H25.8319V32.6209H30.0323V9.36573ZM44.758 33.0704C38.2294 33.0704 32.9134 27.6648 32.9134 21.0176C32.9134 17.7723 34.1357 14.7224 36.3571 12.4448C38.5883 10.1672 41.5665 8.90619 44.758 8.90619C51.4223 8.90619 56.6413 14.2239 56.6413 21.0079C56.6413 24.2336 55.4192 27.2541 53.2073 29.522C50.9761 31.8095 47.9786 33.0704 44.758 33.0704ZM44.758 28.8867C49.0458 28.8867 52.4022 25.4263 52.4022 21.0176C52.4022 16.5797 49.036 13.1095 44.758 13.1095C40.4896 13.1095 37.1525 16.5797 37.1525 21.0176C37.1525 25.4263 40.4896 28.8867 44.758 28.8867Z"
+              fill="#283337"
+            />
+          </svg>
+        </a>
+        <button class="header__burger-button header__burger-button--open">
+          <span></span>
+        </button>
+        <div class="header__wrapper">
+          <button class="header__burger-button header__burger-button--close">
+            <span></span>
+          </button>
+          <nav class="header__nav">
+            <a href="#" class="header__nav-item"> Product </a>
+            <a href="#" class="header__nav-item"> Resources </a>
+            <a href="#" class="header__nav-item"> Support </a>
+            <a href="#" class="header__nav-item"> About </a>
+          </nav>
+          <button class="header__search-button">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.5 8.16667C2.5 5.03705 5.03705 2.5 8.16667 2.5C11.2963 2.5 13.8333 5.03705 13.8333 8.16667C13.8333 9.68911 13.2329 11.0713 12.256 12.0895C12.2255 12.1136 12.1961 12.1397 12.1679 12.1679C12.1397 12.1961 12.1136 12.2255 12.0895 12.256C11.0713 13.2329 9.68911 13.8333 8.16667 13.8333C5.03705 13.8333 2.5 11.2963 2.5 8.16667ZM12.8347 14.2489C11.5419 15.2426 9.92326 15.8333 8.16667 15.8333C3.93248 15.8333 0.5 12.4008 0.5 8.16667C0.5 3.93248 3.93248 0.5 8.16667 0.5C12.4008 0.5 15.8333 3.93248 15.8333 8.16667C15.8333 9.92326 15.2426 11.5419 14.2489 12.8347L17.2071 15.7929C17.5976 16.1834 17.5976 16.8166 17.2071 17.2071C16.8166 17.5976 16.1834 17.5976 15.7929 17.2071L12.8347 14.2489Z"
+                fill="#40494D"
+              />
+            </svg>
+          </button>
+          <button class="header__demo-button button">Schedule Demo</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__text-block appearing-element">
+            <h2 class="hero__title title">Complete&nbspcloud enablement has arrived.</h2>
+            <p class="hero__text text">
+              Oversee, secure, and scale your cloud with one solution.
+            </p>
+            <button class="hero__button button">Request Demo</button>
+          </div>
+          <div class="hero__brands-block">
+            <img src="./images/hero/brand1.png" alt="" class="hero__brand" />
+            <img src="./images/hero/brand2.png" alt="" class="hero__brand" />
+            <img src="./images/hero/brand3.png" alt="" class="hero__brand" />
+            <img src="./images/hero/brand4.png" alt="" class="hero__brand" />
+            <img src="./images/hero/brand5.png" alt="" class="hero__brand" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__text-block appearing-element">
+            <h2 class="about__title title">The Product</h2>
+            <p class="about__text text">
+              Kion offers the only single platform approach to cloud enablement,
+              transcending
+              <span class="bold underline">cloud management</span> and cloud governance by
+              offering all three pillars necessary for total cloud control.
+            </p>
+            <button class="about__button button">More About the Product</button>
+          </div>
+          <div class="about__info-block info-block appearing-element">
+            <img src="./images/about/icon.png" alt="" class="info-block__icon" />
+            <h4 class="info-block__title">Automation&nbsp& Orchestration</h4>
+            <p class="info-block__text text">
+              Provision accounts, get enterprise-wide visibility, and fully integrate the
+              cloud with your tech stack to automate the full cloud lifecycle.
+            </p>
+            <a href="#" class="info-block__link"> Learn More </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="results">
+        <div class="results__container container">
+          <h1 class="results__title title">
+            <span class="bold">Our Results</span>
+          </h1>
+          <div class="results__block">
+            <div class="results__item">
+              <h4 class="results__number-title title">10x</h4>
+              <p class="results__text text">
+                Faster cloud account setup and provisioning
+              </p>
+            </div>
+            <div class="results__item">
+              <h4 class="results__number-title title">30%</h4>
+              <p class="results__text text">Savings, on average, in cloud bills</p>
+            </div>
+            <div class="results__item">
+              <h4 class="results__number-title title">4,000+</h4>
+              <p class="results__text text">
+                One-click resources to automate compliance and security
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="difference">
+        <div class="difference__container container">
+          <div class="difference__text-block appearing-element">
+            <h2 class="difference__title title">The&nbspKion Difference</h2>
+            <p class="difference__text text">
+              We deliver more than just the features to manage and govern your cloud. Kion
+              gives you a comprehensive solution for your cloud to enable your
+              organization to achieve more.
+            </p>
+            <p class="difference__list-title">our differences</p>
+            <ul class="difference__list">
+              <li class="difference__item text">Cloud-native access</li>
+              <li class="difference__item text">A private, self-hosted architecture</li>
+              <li class="difference__item text">Multi-cloud control</li>
+              <li class="difference__item text">A single, intuitive interface</li>
+            </ul>
+            <a href="#" class="difference__link"> Learn More </a>
+          </div>
+          <div class="difference__video-wrapper">
+            <iframe
+              class="difference__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qih8ODFMW94"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="companies">
+        <div class="companies__container container">
+          <h2 class="companies__title title">Built For</h2>
+          <div class="companies__brands-block">
+            <img src="./images/companies/brand1.png" alt="" class="companies__brand" />
+            <img src="./images/companies/brand2.png" alt="" class="companies__brand" />
+            <img src="./images/companies/brand3.png" alt="" class="companies__brand" />
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <div class="demo__container container">
+          <h2 class="demo__title title appearing-element">
+            <span class="bold">Start your cloud enablement journey. </span>
+          </h2>
+          <p class="demo__text text appearing-element">Request a demo today,</p>
+          <button class="demo__button button">Request Demo</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__product">
+          <h4 class="footer__title">Our Product</h4>
+          <ul class="footer__list">
+            <li class="footer__item footer__item-product">
+              <a href="#">Product Overview </a>
+            </li>
+            <li class="footer__item footer__item-product">
+              <a href="#">Automation & Orchestration </a>
+            </li>
+            <li class="footer__item footer__item-product">
+              <a href="#">Financial Management </a>
+            </li>
+            <li class="footer__item footer__item-product">
+              <a href="#">Continuous Compliance </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__resources">
+          <h4 class="footer__title">Resources</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#">All Resources</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Case Studies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h4 class="footer__title">Support</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#">Support Overview</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__about">
+          <h4 class="footer__title">About</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__icon">
+          <svg
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M28.022 0.0447214L26.5292 0.134165V60.8658L28.022 60.9552C28.5984 60.985 29.16 61 29.7069 61C30.2537 61 30.8301 60.985 31.3917 60.9552L32.8844 60.8658V0.134165L31.3917 0.0447214C30.2537 -0.0149071 29.1748 -0.0149071 28.022 0.0447214ZM42.9785 30.8268C42.8603 30.5287 42.8603 30.2008 42.9785 29.9026L51.0185 8.80901L50.2204 8.07856C49.3484 7.27358 48.4173 6.49841 47.4567 5.79777L45.7866 4.57538L37.0224 27.592C36.3425 29.366 36.3425 31.3337 37.0076 33.1077L45.757 56.4224L47.4419 55.2001C48.4026 54.4994 49.3337 53.7243 50.2056 52.9193L50.989 52.1888L42.9785 30.8268ZM9.91702 27.1308L2.29081 17.3369L1.31537 20.0351C0.842426 21.3469 0.458162 22.7034 0.162573 24.0898L0 24.8203L4.28603 30.3061C4.43382 30.4849 4.43382 30.7533 4.28603 30.9322L0.0295589 36.2987L0.192132 37.0441C0.48772 38.4155 0.886765 39.7572 1.35971 41.0541L2.33514 43.7076L9.90216 34.1521C11.5575 32.0651 11.5575 29.2476 9.91702 27.1308ZM59.4278 24.7448L55.1566 30.1412C55.0088 30.335 55.0088 30.5884 55.1419 30.7673L59.4131 36.2382L59.2505 36.9687C58.9549 38.3401 58.5559 39.6966 58.083 41.0085L57.1075 43.6917L49.5108 33.9425C47.8704 31.8257 47.8704 28.9933 49.5404 26.8915L57.137 17.3061L58.1125 19.9745C58.5855 21.2714 58.9697 22.628 59.2652 23.9995L59.4278 24.7448ZM11.9712 5.79777L13.6561 4.57538L22.4351 27.9796C23.1001 29.7535 23.1001 31.7213 22.4202 33.4952L13.6856 56.4373L12.0155 55.2149C11.055 54.5143 10.1238 53.7391 9.25182 52.9341L8.45373 52.2037L16.4642 31.1847C16.5824 30.8865 16.5824 30.5585 16.4642 30.2604L8.42418 8.82392L9.20748 8.07856C10.0795 7.27358 11.0106 6.49841 11.9712 5.79777Z"
+              fill="#61D7AC"
+            />
+          </svg>
+        </div>
+        <div class="footer__integrations">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#">Integrations</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Request a Demo</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Try Kion For Free</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-text">Sign up for our monthly newsletter</p>
+          <form class="footer__subscribe-form" action="#">
+            <input class="footer__subscribe-input" placeholder="Email*" type="text" />
+            <button class="footer__subscribe-button button">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer__demo">
+          <button class="footer__button button">Schedule Demo</button>
+        </div>
+        <div class="footer__socials">
+          <a href="" class="footer__social">
+            <svg
+              width="16"
+              height="14"
+              viewBox="0 0 16 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2C15.4 2.3 14.8 2.4 14.1 2.5C14.8 2.1 15.3 1.5 15.5 0.7C14.9 1.1 14.2 1.3 13.4 1.5C12.8 0.9 11.9 0.5 11 0.5C9.3 0.5 7.8 2 7.8 3.8C7.8 4.1 7.8 4.3 7.9 4.5C5.2 4.4 2.7 3.1 1.1 1.1C0.8 1.6 0.7 2.1 0.7 2.8C0.7 3.9 1.3 4.9 2.2 5.5C1.7 5.5 1.2 5.3 0.7 5.1C0.7 6.7 1.8 8 3.3 8.3C3 8.4 2.7 8.4 2.4 8.4C2.2 8.4 2 8.4 1.8 8.3C2.2 9.6 3.4 10.6 4.9 10.6C3.8 11.5 2.4 12 0.8 12C0.5 12 0.3 12 0 12C1.5 12.9 3.2 13.5 5 13.5C11 13.5 14.3 8.5 14.3 4.2C14.3 4.1 14.3 3.9 14.3 3.8C15 3.3 15.6 2.7 16 2Z"
+                fill="#9FA4A6"
+              />
+            </svg>
+          </a>
+          <a href="" class="footer__social">
+            <svg
+              width="10"
+              height="16"
+              viewBox="0 0 10 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.02293 16L3 9H0V6H3V4C3 1.3008 4.67151 0 7.07938 0C8.23277 0 9.22406 0.08587 9.51294 0.12425V2.94507L7.84296 2.94583C6.53343 2.94583 6.27987 3.5681 6.27987 4.48124V6H10L9 9H6.27986V16H3.02293Z"
+                fill="#9FA4A6"
+              />
+            </svg>
+          </a>
+          <a href="" class="footer__social">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.32 2.33317C3.32 3.25384 2.58 3.99984 1.66667 3.99984C0.753333 3.99984 0.0133333 3.25384 0.0133333 2.33317C0.0133333 1.41317 0.753333 0.666504 1.66667 0.666504C2.58 0.666504 3.32 1.41317 3.32 2.33317ZM3.33333 5.33317H0V15.9998H3.33333V5.33317ZM8.65467 5.33317H5.34267V15.9998H8.65533V10.4005C8.65533 7.28717 12.6747 7.0325 12.6747 10.4005V15.9998H16V9.24584C16 3.9925 10.052 4.18384 8.65467 6.76984V5.33317Z"
+                fill="#9FA4A6"
+              />
+            </svg>
+          </a>
+          <a href="" class="footer__social">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.50001 1.35134C9.50257 1.35134 9.73979 1.35899 10.5306 1.39508C11.2619 1.42842 11.659 1.5506 11.9233 1.65331C12.2734 1.78937 12.5232 1.95189 12.7856 2.21432C13.0481 2.47678 13.2106 2.72662 13.3467 3.0767C13.4494 3.34098 13.5716 3.7381 13.6049 4.46934C13.641 5.26018 13.6486 5.49739 13.6486 7.49995C13.6486 9.50254 13.641 9.73975 13.6049 10.5306C13.5716 11.2618 13.4494 11.659 13.3467 11.9232C13.2106 12.2733 13.0481 12.5231 12.7857 12.7856C12.5232 13.048 12.2734 13.2106 11.9233 13.3466C11.659 13.4493 11.2619 13.5715 10.5306 13.6049C9.73991 13.6409 9.50272 13.6486 7.50001 13.6486C5.49726 13.6486 5.26011 13.6409 4.46935 13.6049C3.73811 13.5715 3.34099 13.4493 3.07671 13.3466C2.72663 13.2106 2.47679 13.048 2.21436 12.7856C1.95192 12.5231 1.78937 12.2733 1.65332 11.9232C1.55061 11.659 1.42843 11.2618 1.39508 10.5306C1.359 9.73975 1.35135 9.50254 1.35135 7.49995C1.35135 5.49739 1.359 5.26018 1.39508 4.46934C1.42843 3.7381 1.55061 3.34098 1.65332 3.0767C1.78937 2.72662 1.95189 2.47678 2.21436 2.21435C2.47679 1.95189 2.72663 1.78937 3.07671 1.65331C3.34099 1.5506 3.73811 1.42842 4.46935 1.39508C5.26019 1.35899 5.49741 1.35134 7.50001 1.35134ZM7.50001 0C5.46312 0 5.20771 0.00863364 4.40775 0.0451331C3.60947 0.0815432 3.06427 0.208339 2.58721 0.393724C2.09402 0.58539 1.67576 0.841839 1.25879 1.25878C0.841842 1.67576 0.585392 2.09401 0.393755 2.5872C0.208339 3.06426 0.0815435 3.60946 0.0451332 4.40774C0.00863367 5.20769 0 5.4631 0 7.49995C0 9.53683 0.00863367 9.79224 0.0451332 10.5922C0.0815435 11.3905 0.208339 11.9357 0.393755 12.4127C0.585392 12.9059 0.841842 13.3242 1.25879 13.7411C1.67576 14.1581 2.09402 14.4145 2.58721 14.6062C3.06427 14.7916 3.60947 14.9184 4.40775 14.9548C5.20771 14.9913 5.46312 14.9999 7.50001 14.9999C9.53687 14.9999 9.79227 14.9913 10.5922 14.9548C11.3905 14.9184 11.9357 14.7916 12.4128 14.6062C12.906 14.4145 13.3242 14.1581 13.7412 13.7411C14.1581 13.3242 14.4146 12.9059 14.6063 12.4127C14.7916 11.9357 14.9184 11.3905 14.9548 10.5922C14.9913 9.79224 15 9.53683 15 7.49995C15 5.4631 14.9913 5.20769 14.9548 4.40774C14.9184 3.60946 14.7916 3.06426 14.6063 2.5872C14.4146 2.09401 14.1581 1.67576 13.7412 1.25878C13.3242 0.841839 12.906 0.58539 12.4128 0.393724C11.9357 0.208339 11.3905 0.0815432 10.5922 0.0451331C9.79227 0.00863364 9.53687 0 7.50001 0Z"
+                fill="#9FA4A6"
+              />
+              <path
+                d="M7.5037 3.65234C5.37664 3.65234 3.65234 5.37663 3.65234 7.50366C3.65234 9.63072 5.37664 11.355 7.5037 11.355C9.63074 11.355 11.355 9.63072 11.355 7.50366C11.355 5.37663 9.63074 3.65234 7.5037 3.65234ZM7.5037 10.0037C6.12297 10.0037 5.00369 8.88439 5.00369 7.50366C5.00369 6.12296 6.12297 5.00369 7.5037 5.00369C8.88441 5.00369 10.0037 6.12296 10.0037 7.50366C10.0037 8.88439 8.88441 10.0037 7.5037 10.0037Z"
+                fill="#9FA4A6"
+              />
+              <path
+                d="M12.4069 3.49767C12.4069 3.9947 12.004 4.39765 11.5069 4.39765C11.0099 4.39765 10.6069 3.9947 10.6069 3.49767C10.6069 3.00061 11.0099 2.59766 11.5069 2.59766C12.004 2.59766 12.4069 3.00061 12.4069 3.49767Z"
+                fill="#9FA4A6"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer__license">
+          <p class="footer__license-text">
+            <a href="#">License Agreement</a>
+          </p>
+          <p class="footer__license-text">
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="footer__copyrights">
+          <p class="footer__copyrights-text">
+            Copyright © 2021 Nor Labs, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/adaptiveHeader.js"></script>
+    <script src="./js/appearingElements.js"></script>
+  </body>
+</html>

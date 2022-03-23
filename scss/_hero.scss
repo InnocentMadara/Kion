@@ -1,0 +1,64 @@
+.hero {
+  background: url("../images/hero/image.png") 79.959% 30.033% / auto 40.555%
+      no-repeat,
+    linear-gradient(#f3f7f4);
+  @include mq(976) {
+    background: linear-gradient(rgba(#f3f7f4, 0.8)),
+      url("../images/hero/image.png") 79.959% 30.033% / auto 40.555% no-repeat,
+      linear-gradient(#f3f7f4);
+  }
+  // .hero__container
+  &__container {
+    position: relative;
+    padding: calc(min(280px, 22.85vh)) 25px 150px;
+    @include mq(976) {
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+    @include mq(500) {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+
+  // .hero__text-block
+  &__text-block {
+    max-width: 420px;
+    margin-bottom: 12.43vw;
+  }
+
+  // .hero__title
+  &__title {
+    margin-bottom: 44px;
+    @include mq(500) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .hero__text
+  &__text {
+    margin-bottom: 26px;
+    max-width: 300px;
+  }
+
+  // .hero__button
+  &__button {
+  }
+
+  // .hero__brands-block
+  &__brands-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include mq(976) {
+      flex-wrap: wrap;
+    }
+  }
+
+  // .hero__brand
+  &__brand {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+}
