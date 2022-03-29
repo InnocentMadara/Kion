@@ -1,11 +1,17 @@
-function handler(e) {
-  document.querySelectorAll(".appearing-element").forEach(element => {
-    let coords = element.getBoundingClientRect();
-    if (coords.top - 500 < window.innerHeight / 1.2) {
-      setTimeout(function () {
-        element.classList.add("appearing-element--appeared");
-      }, 400);
-    }
-  });
+const appearingElements = Array.from(document.querySelectorAll(".appearing-element"));
+
+const options = {
+  rootMargin: "-10%",
+};
+
+const observer = new IntersectionObserver((entries, observer)=>{
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add("appearing-element--appeared");
+    observer.unobserve(entry.target);
+  })
+}, options)
+
+for(let elem of appearingElements){
+  observer.observe(elem);
 }
-document.addEventListener("scroll", handler);
